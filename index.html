@@ -14,13 +14,9 @@
     <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
   </head>
-  <body
-    style="
-      background: url('background/1.jpg') no-repeat center center;
-      background-size: cover;
-    "
-  >
+  <body>
     <canvas id="confettiCanvas"></canvas>
+    <div class="hearts-container"></div>
     <section class="intro">
       <img
         src="gif/kissing_panda.gif"
@@ -37,22 +33,33 @@
       </h2>
       <div class="scroll-icon" style="display: none">⬇️ Scroll down ⬇️</div>
     </section>
-    <div class="container">
+    <section class="card-section">
+      <div class="container">
       <div class="stack-stack" id="cardStack">
         <img src="image/1.jpg" class="card" />
         <img src="image/2.jpg" class="card" />
         <img src="image/3.jpg" class="card" />
         <img src="image/4.jpg" class="card" />
       </div>
-    </div>
-    <section class="gallery-section">
+    </div></section>
+    
+    <section class="memories-section">
       <h2>Memories ❤️</h2>
+      <div class="memories-container">
       <div class="gallery-container">
         <img src="image/1.jpg" class="gallery-img" />
         <img src="image/2.jpg" class="gallery-img" />
         <img src="image/3.jpg" class="gallery-img" />
         <img src="image/4.jpg" class="gallery-img" />
       </div>
+      <div id="map"></div>
+      </div>
     </section>
+
+      
+    <!-- ✅ Load Google Maps API (Replace YOUR_API_KEY) -->
+    <script async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqZQPEiRjDHN_QPlgvfOAm9XQIzZLjhC0&callback=initMap">
+    </script>
   </body>
 </html>
