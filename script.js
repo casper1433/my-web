@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
       x: Math.random() * canvas.width,
       y: Math.random() * canvas.height,
       r: Math.random() * 5 + 2, // Random size
-      d: Math.random() * 10 + 0.5, // Speed
+      d: Math.random() * 5 + 0.1, // Speed
       color: `hsl(${Math.random() * 360}, 100%, 70%)` // Random colors
     });
   }
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     confetti.forEach((c) => {
-      c.y += c.d / 10; // Falling speed
+      c.y += c.d / 5; // Falling speed
       if (c.y > canvas.height) c.y = 0; // Reset when out of screen
     });
 
